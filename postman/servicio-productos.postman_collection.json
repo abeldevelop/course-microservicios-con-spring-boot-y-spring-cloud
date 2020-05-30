@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "3a9da131-5b8c-4117-b658-fb79686dfd54",
+		"name": "servicio-productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servicio-productos-url}}/listar",
+					"host": [
+						"{{servicio-productos-url}}"
+					],
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindProductoById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servicio-productos-url}}/ver/3",
+					"host": [
+						"{{servicio-productos-url}}"
+					],
+					"path": [
+						"ver",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
