@@ -15,18 +15,18 @@ import lombok.RequiredArgsConstructor;
 @Service
 public class ProductoServiceImpl implements ProductoService {
 
-	private final ProductoRepository repository;
+	private final ProductoRepository productoRepository;
 	
 	@Override
 	@Transactional(readOnly = true)
 	public List<Producto> findAll() {
-		return repository.findAll();
+		return productoRepository.findAll();
 	}
 	
 	@Override
 	@Transactional(readOnly = true)
 	public Producto findById(Long id) {
-		return repository.findById(id).orElse(null);
+		return productoRepository.findById(id).orElse(null);
 	}
 	
 }
