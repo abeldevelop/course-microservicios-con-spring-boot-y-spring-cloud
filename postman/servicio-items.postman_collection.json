@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "7afbb7ce-1659-47de-a08f-dd4226ce7ed7",
+		"name": "servicio-items",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAllItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servicio-items-url}}/listar",
+					"host": [
+						"{{servicio-items-url}}"
+					],
+					"path": [
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{servicio-items-url}}/ver/1/cantidad/2",
+					"host": [
+						"{{servicio-items-url}}"
+					],
+					"path": [
+						"ver",
+						"1",
+						"cantidad",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
