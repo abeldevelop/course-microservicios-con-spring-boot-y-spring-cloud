@@ -14,7 +14,7 @@ import com.formacionbdi.springboot.app.items.service.ItemService;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-//@Primary
+@Primary
 @Service
 public class ItemServiceFeignImpl implements ItemService {
 
