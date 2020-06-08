@@ -24,6 +24,11 @@ public class ProductoController {
 	
 	@GetMapping("/ver/{id}")
 	public Producto findProductoById(@PathVariable Long id) {
+//		try {
+//			Thread.sleep(2000l);
+//		}catch (Exception e) {
+//			e.printStackTrace();
+//		}
 		return productoService.findById(id);
 	}
 	
