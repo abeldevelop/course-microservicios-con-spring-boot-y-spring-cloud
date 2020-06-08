@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "f4a27c67-8401-4ffa-bc4d-ed50be7aef96",
+		"name": "zuul-server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAllItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{zuul-server-url}}/api/items/listar",
+					"host": [
+						"{{zuul-server-url}}"
+					],
+					"path": [
+						"api",
+						"items",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindItemById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{zuul-server-url}}/api/items/ver/1/cantidad/2",
+					"host": [
+						"{{zuul-server-url}}"
+					],
+					"path": [
+						"api",
+						"items",
+						"ver",
+						"1",
+						"cantidad",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
